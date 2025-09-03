@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sb dev src/index.tsx",
     "build": "sb build src/index.tsx",
-    "start": "sb start"
+    "start": "sb start",
+    "check-types": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
