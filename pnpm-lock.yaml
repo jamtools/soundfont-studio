@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       '@jamtools/core':
-        specifier: 0.16.0
-        version: 0.16.0(@springboardjs/platforms-browser@0.16.0(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)))(@tonejs/midi@2.0.28)(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
+        specifier: v0.16.1-dev1-fix-offline-import-path
+        version: 0.16.1-dev1-fix-offline-import-path(@springboardjs/platforms-browser@0.16.1-dev1-fix-offline-import-path(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)))(@tonejs/midi@2.0.28)(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
       '@springboardjs/platforms-browser':
-        specifier: 0.16.0
-        version: 0.16.0(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
+        specifier: v0.16.1-dev1-fix-offline-import-path
+        version: 0.16.1-dev1-fix-offline-import-path(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
       '@springboardjs/platforms-node':
-        specifier: 0.16.0
-        version: 0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3)
+        specifier: v0.16.1-dev1-fix-offline-import-path
+        version: 0.16.1-dev1-fix-offline-import-path(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3)
       react:
         specifier: ^19.1.1
         version: 19.1.1
@@ -30,11 +30,11 @@ importers:
         specifier: ^0.12.0
         version: 0.12.0
       springboard:
-        specifier: 0.16.0
-        version: 0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
+        specifier: v0.16.1-dev1-fix-offline-import-path
+        version: 0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
       springboard-server:
-        specifier: 0.16.0
-        version: 0.16.0(@springboardjs/data-storage@0.16.0(kysely@0.28.5))(@springboardjs/platforms-node@0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(hono@4.9.6)(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
+        specifier: v0.16.1-dev1-fix-offline-import-path
+        version: 0.16.1-dev1-fix-offline-import-path(@springboardjs/data-storage@0.16.0(kysely@0.28.5))(@springboardjs/platforms-node@0.16.1-dev1-fix-offline-import-path(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(hono@4.9.6)(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
     devDependencies:
       '@types/node':
         specifier: ^24.3.0
@@ -46,8 +46,8 @@ importers:
         specifier: ^19.1.9
         version: 19.1.9(@types/react@19.1.12)
       springboard-cli:
-        specifier: 0.16.0
-        version: 0.16.0(@springboardjs/platforms-browser@0.16.0(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)))(@springboardjs/platforms-node@0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(springboard-server@0.16.0(@springboardjs/data-storage@0.16.0(kysely@0.28.5))(@springboardjs/platforms-node@0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(hono@4.9.6)(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
+        specifier: v0.16.1-dev1-fix-offline-import-path
+        version: 0.16.1-dev1-fix-offline-import-path(08dfe84ec4756fc54e9eea98613fd467)
       typescript:
         specifier: ^5.9.2
         version: 5.9.2
@@ -227,12 +227,12 @@ packages:
       '@hono/node-server': ^1.11.1
       hono: ^4.6.0
 
-  '@jamtools/core@0.16.0':
-    resolution: {integrity: sha512-LfQ7EcYly7m1B2UUwoLp/xkhWiJ/ID1KXw7XV/8HYEuatJ7SvbFGAy7MzOhzJPzWi9HZpyj4RcGID6akz9/nZQ==}
+  '@jamtools/core@0.16.1-dev1-fix-offline-import-path':
+    resolution: {integrity: sha512-c11nhVRHShFwAVDTTTDAjul5AmrXjqeuZIXeNxD4wfUXeIqiIgxO0Dy7A13RZDDeSgooqk/gRb1cJ/plc8Va/w==}
     peerDependencies:
-      '@springboardjs/platforms-browser': 0.16.0
+      '@springboardjs/platforms-browser': 0.16.1-dev1-fix-offline-import-path
       '@tonejs/midi': ^2.0.0
-      springboard: 0.16.0
+      springboard: 0.16.1-dev1-fix-offline-import-path
       svelte: '>= 5'
     peerDependenciesMeta:
       svelte:
@@ -251,17 +251,17 @@ packages:
     peerDependencies:
       kysely: '>= 0.24.0'
 
-  '@springboardjs/platforms-browser@0.16.0':
-    resolution: {integrity: sha512-1XgKgdOtUX3skK6cOy30B2dG7XBDH+yBHmEhIXXc2VJ7L7f9CjuJvTatwApNdV9N1tFe3AQYX5VOpGRmVuhQZQ==}
+  '@springboardjs/platforms-browser@0.16.1-dev1-fix-offline-import-path':
+    resolution: {integrity: sha512-PdM0MGoP9nJFXa8MkZ9pyqaeTOGOjI+39LjOU7fkq1pv7UmzhGEaxCNoGNRh2iSaNNVviLUWFejuxrDy/2EHcA==}
     peerDependencies:
       react-router-dom: ^6
-      springboard: 0.16.0
+      springboard: 0.16.1-dev1-fix-offline-import-path
 
-  '@springboardjs/platforms-node@0.16.0':
-    resolution: {integrity: sha512-MZvBU0ugpW+NeR5dH93PkGKyDuJd8G2LEg4ysFug6Tgt0HKJ9DqV0AoYy2fKIwsJ+v46BhkO+YlXQlTg8criiA==}
+  '@springboardjs/platforms-node@0.16.1-dev1-fix-offline-import-path':
+    resolution: {integrity: sha512-xxy/AYRbo18LQMKqU31IVTvKSzbbNSWJqp2ME6zQ8izTvq201apNqWMEg/xpbuER2I2gP4EX0SLmeRT8ZwYl5w==}
     peerDependencies:
       isomorphic-ws: ^4.0.1
-      springboard: 0.16.0
+      springboard: 0.16.1-dev1-fix-offline-import-path
       ws: ^8.18.0
 
   '@tonejs/midi@2.0.28':
@@ -556,25 +556,25 @@ packages:
   soundfont-player@0.12.0:
     resolution: {integrity: sha512-8BJIsAt7h1PK3thSZDgF6zecgGhYkK74JnZO8WRZi3h34qG6H/DYlnv7cpRvL7Q9C8N6qld4Qwj7nJsX1gYjEA==}
 
-  springboard-cli@0.16.0:
-    resolution: {integrity: sha512-WggFT3NWiReHlDJ/WbjCrXgneCPRqakma960F2UtwxKMwxqahSOHajKU2rTmMMR389FJ5X0IHzJZfqT/kl3S5Q==}
+  springboard-cli@0.16.1-dev1-fix-offline-import-path:
+    resolution: {integrity: sha512-461/ihK4t3IzTZ5BTSIMGROuioCdDF53KT5OKfMhfFdiX3CwuDDRhXM0EOSRUDmP4cTd58o5xSyJmJVn9rUo8w==}
     hasBin: true
     peerDependencies:
-      '@springboardjs/platforms-browser': 0.16.0
-      '@springboardjs/platforms-node': 0.16.0
-      springboard: 0.16.0
-      springboard-server: 0.16.0
+      '@springboardjs/platforms-browser': 0.16.1-dev1-fix-offline-import-path
+      '@springboardjs/platforms-node': 0.16.1-dev1-fix-offline-import-path
+      springboard: 0.16.1-dev1-fix-offline-import-path
+      springboard-server: 0.16.1-dev1-fix-offline-import-path
 
-  springboard-server@0.16.0:
-    resolution: {integrity: sha512-E2XkkZqsuD9Eih36LNRzjSQt2+q/xYR3G5ZHUf/XgjvfhOU2yIb6NoN/IkC2N7rD+B0LfssVpM04K5uCX0JIiQ==}
+  springboard-server@0.16.1-dev1-fix-offline-import-path:
+    resolution: {integrity: sha512-spoA1H59x+ELTTQaFDF3hT+QNbQBAggSj+sjAjzX51DGmAYcRGoNqql9btJgooTk5NCHP3xYSyOmvpvt8If2eQ==}
     peerDependencies:
-      '@springboardjs/data-storage': 0.16.0
-      '@springboardjs/platforms-node': 0.16.0
+      '@springboardjs/data-storage': 0.16.1-dev1-fix-offline-import-path
+      '@springboardjs/platforms-node': 0.16.1-dev1-fix-offline-import-path
       hono: ^4.6.7
-      springboard: 0.16.0
+      springboard: 0.16.1-dev1-fix-offline-import-path
 
-  springboard@0.16.0:
-    resolution: {integrity: sha512-W+3Pkum1dw/RCh+q5LmhPFvUGFY9mfnFlU43JiJ+AX9IFuKG5iPG0oH8dYh0XJVZ1BxTmNnAr2r0m5a8qJeqUA==}
+  springboard@0.16.1-dev1-fix-offline-import-path:
+    resolution: {integrity: sha512-z3slIfRJaWCsLTCHgCGtur96fZ7YB0B6HdHfsagtaxd/OHnPgyvX8/okxAwnuaWMejguzcpjIblCLT8Q+vChAA==}
     peerDependencies:
       immer: ^10.1.1
       json-rpc-2.0: ^1.7.0
@@ -766,15 +766,15 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@jamtools/core@0.16.0(@springboardjs/platforms-browser@0.16.0(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)))(@tonejs/midi@2.0.28)(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))':
+  '@jamtools/core@0.16.1-dev1-fix-offline-import-path(@springboardjs/platforms-browser@0.16.1-dev1-fix-offline-import-path(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)))(@tonejs/midi@2.0.28)(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))':
     dependencies:
-      '@springboardjs/platforms-browser': 0.16.0(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
+      '@springboardjs/platforms-browser': 0.16.1-dev1-fix-offline-import-path(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
       '@tonejs/midi': 2.0.28
       easymidi: 3.1.0
       immer: 10.1.3
       midi-file: 1.2.4
       soundfont-player: 0.12.0
-      springboard: 0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
+      springboard: 0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
       webmidi: 3.1.12
 
   '@julusian/midi@3.6.1':
@@ -790,19 +790,19 @@ snapshots:
       kysely: 0.28.5
       zod: 3.25.76
 
-  '@springboardjs/platforms-browser@0.16.0(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))':
+  '@springboardjs/platforms-browser@0.16.1-dev1-fix-offline-import-path(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))':
     dependencies:
       json-rpc-2.0: 1.7.1
       react-router-dom: 6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       reconnecting-websocket: 4.4.0
-      springboard: 0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
+      springboard: 0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
 
-  '@springboardjs/platforms-node@0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3)':
+  '@springboardjs/platforms-node@0.16.1-dev1-fix-offline-import-path(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3)':
     dependencies:
       isomorphic-ws: 4.0.1(ws@8.18.3)
       json-rpc-2.0: 1.7.1
       reconnecting-websocket: 4.4.0
-      springboard: 0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
+      springboard: 0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
       ws: 8.18.3
 
   '@tonejs/midi@2.0.28':
@@ -1107,32 +1107,32 @@ snapshots:
       note-parser: 2.0.1
       sample-player: 0.5.5
 
-  springboard-cli@0.16.0(@springboardjs/platforms-browser@0.16.0(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)))(@springboardjs/platforms-node@0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(springboard-server@0.16.0(@springboardjs/data-storage@0.16.0(kysely@0.28.5))(@springboardjs/platforms-node@0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(hono@4.9.6)(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)):
+  springboard-cli@0.16.1-dev1-fix-offline-import-path(08dfe84ec4756fc54e9eea98613fd467):
     dependencies:
-      '@springboardjs/platforms-browser': 0.16.0(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
-      '@springboardjs/platforms-node': 0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3)
+      '@springboardjs/platforms-browser': 0.16.1-dev1-fix-offline-import-path(react-router-dom@6.30.1(react-dom@19.1.1(react@19.1.1))(react@19.1.1))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
+      '@springboardjs/platforms-node': 0.16.1-dev1-fix-offline-import-path(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3)
       commander: 12.1.0
       concurrently: 9.2.1
       esbuild: 0.25.9
-      springboard: 0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
-      springboard-server: 0.16.0(@springboardjs/data-storage@0.16.0(kysely@0.28.5))(@springboardjs/platforms-node@0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(hono@4.9.6)(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
+      springboard: 0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
+      springboard-server: 0.16.1-dev1-fix-offline-import-path(@springboardjs/data-storage@0.16.0(kysely@0.28.5))(@springboardjs/platforms-node@0.16.1-dev1-fix-offline-import-path(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(hono@4.9.6)(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))
       tslib: 2.8.1
       typescript: 5.9.2
 
-  springboard-server@0.16.0(@springboardjs/data-storage@0.16.0(kysely@0.28.5))(@springboardjs/platforms-node@0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(hono@4.9.6)(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)):
+  springboard-server@0.16.1-dev1-fix-offline-import-path(@springboardjs/data-storage@0.16.0(kysely@0.28.5))(@springboardjs/platforms-node@0.16.1-dev1-fix-offline-import-path(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3))(hono@4.9.6)(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)):
     dependencies:
       '@hono/node-server': 1.19.1(hono@4.9.6)
       '@hono/node-ws': 1.2.0(@hono/node-server@1.19.1(hono@4.9.6))(hono@4.9.6)
       '@springboardjs/data-storage': 0.16.0(kysely@0.28.5)
-      '@springboardjs/platforms-node': 0.16.0(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3)
+      '@springboardjs/platforms-node': 0.16.1-dev1-fix-offline-import-path(isomorphic-ws@4.0.1(ws@8.18.3))(springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2))(ws@8.18.3)
       hono: 4.9.6
       json-rpc-2.0: 1.7.1
-      springboard: 0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
+      springboard: 0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2)
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  springboard@0.16.0(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2):
+  springboard@0.16.1-dev1-fix-offline-import-path(immer@10.1.3)(json-rpc-2.0@1.7.1)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)(rxjs@7.8.2):
     dependencies:
       dexie: 4.2.0
       immer: 10.1.3
