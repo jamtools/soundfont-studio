@@ -6,7 +6,8 @@
     "dev": "sb dev src/index.tsx",
     "build": "sb build src/index.tsx",
     "start": "sb start",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "build-offline-for-pages": "SPRINGBOARD_PLATFORM_VARIANT=browser_offline npm run build && mv dist/browser_offline/browser/dist/index.html dist/browser_offline/browser/index.html",
   },
   "keywords": [],
   "author": "",
