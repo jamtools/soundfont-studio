@@ -1,7 +1,7 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 
 import '@jamtools/core/modules/macro_module/macro_module';
+import './styles.css';
 
 import springboard from 'springboard';
 // @platform "browser"
@@ -12,6 +12,7 @@ import {useModule} from './hooks/use_module';
 import {Player} from 'soundfont-player';
 import {soundfontInstrumentNames} from './soundfont_instrument_names';
 import {useOctaveKeyboardShortcuts} from './hooks/useOctaveKeyboardShortcuts';
+import { MidiKeyboardModal } from './components/MidiKeyboardModal';
 
 springboard.registerModule('example', {}, async (app) => {
     const currentInstrument = await app.statesAPI.createUserAgentState<typeof soundfontInstrumentNames[number]>('currentInstrument', 'marimba')
@@ -59,6 +60,7 @@ springboard.registerModule('example', {}, async (app) => {
 
     app.registerRoute('/', {}, () => {
         const instruments = soundfontInstrumentNames;
+        const [isModalOpen, setIsModalOpen] = useState(false);
 
         const qwertyOctaveState = qwertyOctave.useState();
 
@@ -68,33 +70,88 @@ springboard.registerModule('example', {}, async (app) => {
         });
 
         return (
-            <div>
-                <midiMacros.keyboardInput.components.edit/>
+            <div className="app-container">
+                <div className="main-content">
+                    <header className="header">
+                        <h1 className="app-title">Soundfont Studio</h1>
+                        <p className="app-subtitle">Play virtual instruments with your keyboard</p>
+                    </header>
 
-                <select
-                    value={currentInstrument.useState()}
-                    onChange={async e => {
-                        currentInstrument.setState(e.target.value as typeof instruments[number]);
-                        sf.stop();
-                        sf = await setupSoundfont(e.target.value as typeof instruments[number]);
-                    }}
-                >
-                    {instruments.map(instrument => (
-                        <option key={instrument} value={instrument}>{instrument}</option>
-                    ))}
-                </select>
+                    <div className="control-panel">
+                        <div className="control-group">
+                            <label className="control-label">Instrument</label>
+                            <select
+                                className="instrument-selector"
+                                value={currentInstrument.useState()}
+                                onChange={async e => {
+                                    currentInstrument.setState(e.target.value as typeof instruments[number]);
+                                    sf.stop();
+                                    sf = await setupSoundfont(e.target.value as typeof instruments[number]);
+                                }}
+                            >
+                                {instruments.map(instrument => (
+                                    <option key={instrument} value={instrument}>
+                                        {instrument.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
 
-                <div>
-                    <button onClick={() => qwertyOctave.setState(prev => prev - 1)}>
-                        - 
-                    </button>
-                    {qwertyOctaveState}
-                    <button onClick={() => qwertyOctave.setState(prev => prev + 1)}>
-                        + 
-                    </button>
+                        <div className="control-group compact">
+                            <label className="control-label">QWERTY Octave</label>
+                            <div className="octave-controls compact">
+                                <button 
+                                    className="octave-button compact"
+                                    onClick={() => qwertyOctave.setState(prev => prev - 1)}
+                                    aria-label="Decrease QWERTY octave"
+                                >
+                                    −
+                                </button>
+                                <div className="octave-display compact">
+                                    {qwertyOctaveState}
+                                </div>
+                                <button 
+                                    className="octave-button compact"
+                                    onClick={() => qwertyOctave.setState(prev => prev + 1)}
+                                    aria-label="Increase QWERTY octave"
+                                >
+                                    +
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="keyboard-actions">
+                        <button 
+                            className="keyboard-config-button"
+                            onClick={() => setIsModalOpen(true)}
+                        >
+                            Choose MIDI Keyboard Input
+                        </button>
+                    </div>
+
+                    <div className="info-panel">
+                        <div className="info-card">
+                            <h3>Keyboard Shortcuts</h3>
+                            <p>
+                                <span className="keyboard-shortcuts">Z/X</span> - Change octave<br/>
+                                <span className="keyboard-shortcuts">QWERTY</span> - Play notes
+                            </p>
+                        </div>
+                        <div className="info-card">
+                            <h3>MIDI Support</h3>
+                            <p>Connect your MIDI keyboard to play with hardware instruments</p>
+                        </div>
+                    </div>
                 </div>
+                
+                <MidiKeyboardModal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                    keyboardComponent={midiMacros.keyboardInput.components.edit as React.ComponentType}
+                />
             </div>
-        )
+        );
     });
 
     return {
